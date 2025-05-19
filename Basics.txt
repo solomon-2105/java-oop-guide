@@ -1,0 +1,40 @@
+📄 Basics.java
+
+// Basic skeleton for a Java program
+class Basics {
+    public static void main(String[] args) {
+        System.out.println("Hello, Sinai!");
+    }
+}
+
+
+🔧 How to Run It
+
+1. Go to terminal and type:
+   javac Basics.java
+
+   🟢 Here, the Java compiler will compile the code into bytecode.  
+   If there are no errors in conversion, command prompt will take you to the next line.
+
+2. Now type:
+   java Basics
+
+   🚀 Here, JVM will run the bytecode and execute the program.
+
+
+📌 Key Concepts
+
+✅ Every line of code that runs in Java must be inside a class  
+👉 And the class name must be the same as the file name
+
+
+🔑 Main Method  
+Any code inside the main method will be executed.
+
+    public static void main(String[] args)
+
+
+💡 System.out.println  
+- System is a built-in class in Java that contains the out object
+- out is short for output and is used to print
+- print and println are the same, but println adds a new line
