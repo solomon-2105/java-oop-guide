@@ -1,0 +1,127 @@
+
+JAVA METHODS
+
+= A method is a block of code which only runs when it is called.  
+= You can pass data known as parameters into a method.  
+= Methods are used to perform certain actions and are also called functions.
+
+HOW TO CREATE A METHOD
+
+= A method must be declared within a class.  
+= It is followed by the name of the method, followed by parentheses ().  
+= Java has predefined methods like System.out.println() but we can also create our own methods.
+
+Code Example:
+public class Main {
+    static void Brr() {
+        // code to be executed 
+    }
+}
+
+= Here, Brr() is the name of a method.  
+= static - method belongs to the main class and not an object of the main class.  
+= void - method doesn’t have a return value.
+
+HOW TO CALL A METHOD
+
+= To call a method, write the method's name followed by parentheses () and a semicolon ;
+
+Code Example:
+public class Main {
+    static void Brr() {
+        System.out.println("Hello World");
+    }
+
+    public static void main(String[] args) {
+        Brr();
+    }
+}
+
+Output:
+Hello World
+
+= Note: The same method can be called multiple times.
+
+PARAMETERS AND ARGUMENTS
+
+= Information can be passed to methods as a parameter.  
+= Parameters act as variables inside the method.  
+= They're specified after the method name inside parentheses.
+
+Code Example:
+public class Main {
+    static void Brr(String grr) {
+        System.out.println("Hello " + grr);
+    }
+
+    public static void main(String[] args) {
+        Brr("Sinai");
+        Brr("Praneeth");
+        Brr("Srilekha");
+        Brr("Haseeb");
+        Brr("Pranitha");
+    }
+}
+
+Output:
+Hello Sinai
+Hello Praneeth
+Hello Srilekha
+Hello Haseeb
+Hello Pranitha
+
+= Note: When a parameter is passed to a method, it is called an argument.  
+= From the example: grr is a parameter; Sinai, Praneeth, etc. are arguments.
+
+MULTIPLE PARAMETERS
+
+Code Example:
+static void myMethod(String brr, int age) {
+    System.out.println(brr + " is " + age);
+}
+
+public static void main(String[] args) {
+    myMethod("Liam", 5);
+    myMethod("Debbie", 13);
+}
+
+Output:
+Liam is 5
+Debbie is 13
+
+RETURN VALUES
+
+= If we want to return a value from a method, we can use a primitive datatype (int, char, etc.) instead of void and use the return keyword.
+
+Code Example:
+public class Main {
+    static int brr(int x) {
+        return x + 5;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(brr(3));
+    }
+}
+
+Output:
+8
+
+= Even with multiple parameters:
+
+Code Example:
+public class Main {
+    static int brr(int x, int y) {
+        return x + y;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(brr(3, 5));
+    }
+}
+
+= We can store the result in a variable:
+
+Code Example:
+int z = brr(2, 5);
+System.out.println(z);
