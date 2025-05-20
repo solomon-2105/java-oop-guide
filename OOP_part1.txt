@@ -1,0 +1,60 @@
+OOP:
+
+Object Oriented Programming
+
+= It's about creating objects that contain both data and methods
+= OOP is faster and easier to execute
+= Provides a clear structure for programs
+= OOP helps to keep the Java code DRY (Don't Repeat Yourself) and make code easier to maintain, modify and debug
+= OOP makes it possible to create fully reusable applications with less code and shorter development time
+
+Java Classes and Objects:
+= Example:
+  Class: fruit           Object: apple, banana, mango
+
+= A class is a template for objects, and an object is an instance of a class
+= When the individual objects are created, they inherit all the variables and methods from the class
+= Everything in Java is associated with classes and objects along with its attributes and methods
+  Example:
+   In real life a car is an object
+   The car has attributes - weight, color, etc
+   Methods - drive, brake
+= A class is like an object construction or a blueprint for creating objects
+
+Create a Class:
+= To create a class we use the "class" keyword
+
+Code Example:
+public class Main{
+    int x = 5;
+}
+
+Create an Object:
+= To create an object of a class, specify the class name, followed by the object name and use the keyword new
+
+Code Example:
+public class Main{
+    int x = 5;
+    public static void main(String [] args){
+        Main brr = new Main();
+        System.out.println(brr.x);
+    }
+}
+Output:
+5
+
+Multiple Objects:
+
+Code Example:
+public class Main{
+    int x = 5;
+    public static void main(String [] args){
+        Main brr = new Main();
+        Main brr2 = new Main();
+        System.out.println(brr.x);
+        System.out.println(brr2.x);
+    }
+}
+Output:
+5
+5
