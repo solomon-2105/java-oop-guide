@@ -1,0 +1,58 @@
+Method Overloading:
+
+= Multiple methods having same names with different parameters
+
+code example:
+public class Main{
+    static int Janj(int x, int y){
+        return x+y;
+    }
+    static double Janj(double a, double b){
+        return a+b;
+    }
+    public static void main(String[] args){
+        int a = Janj(100,200);
+        double b = Janj(12.5,15.5);
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+
+= Multiple methods can have same name as long as the number and/or type of parameters are different
+
+Java Scope:
+
+= In Java, variables are only accessible inside the region they're created. This is called Scope.
+
+= Method Scope:
+Variables declared directly inside a method are available anywhere in the method.
+
+code example:
+public class Main{
+    public static void main(String []args){
+        // code here cannot use x
+
+        int x = 100;
+
+        // code here can use x
+        System.out.println(x);
+    }
+}
+
+Recursion (Tiny Peek Only):
+
+= Technique of making a function call itself repeatedly until a base condition is met
+
+= For example: adding 2 numbers together is easy to do but adding a range of numbers is more complicated
+
+code example:
+public class Main{
+    public static void main(String[] args){
+        int result = sum(10);
+        System.out.println(result);
+    }
+    public static int sum(int k){
+        if (k > 0) return k + sum(k - 1);
+        else return 0;
+    }
+}
