@@ -1,0 +1,18 @@
+How java works?
+==============
+
+= java virtual environment's job is to execute java code , it's platform dependent , we have to convert java code written by us into bytecode , this process is done by java compiler , code is compiled into a bytecode and then that bytecode is run on java and we need to specify the file name that should be run by jvm , probably the file which has a main method and make sure it has a particular signature .....(public static void main and it has some parameters too(String [] args)
+
+= java is object oriented , everything is associated with an object which is present in a class...
+
+= class Sinai{
+	public static void main(String []args){
+		System.out.println("Hello world");
+	}
+}
+to run this code we use two commands ==
+	= javac Sinai.java
+	= java Sinai
+Basically when we run our code , we use JRE to run it (Java Runtime Environment) JVM is a part of JRE...and JDK constitutes of JRE and JVM
+JDK means Java Development Kit
+
