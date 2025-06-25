@@ -1,0 +1,77 @@
+Types of languages:
+==================
+
+1) procedural languages:
+=======================
+= specifies a series of well structured steps and procedures to compose a program
+= contains a systematic order of statements , functions and commands to complete a task
+
+2) functional languages:
+=======================
+= writing a program only in pure function i.e., never modify variables, but only create new ones as an output
+= used in situations where we have to perform lots of different operations on the same set of data , like machine learning
+
+3) Object oriented languages:
+============================
+= revolves around objects
+= code + data = object
+= developed to make it easier to develop , debug , reuse and maintain software
+
+Static languages:
+=================
+= perform type checking at compile time
+= errors will show at compile time
+= declare datatype before you use it
+= has more control
+
+dynamic languages:
+==================
+= perform type checking at runtime
+= error might not show till program is run
+= no need to declare datatype of variables
+= saves time in writing code but might give error at runtime
+
+=> 
+   in terms of memory management , we have two of em' , 
+= one is stack memory and another is heap memory
+
+= say  a = 10
+ here a is reference variable , 10 is the object 
+ variables are stored in stack memory and objects are stored in heap
+ memory , and variable a points to '10' object in heap memory
+
+= say a=[1,2,3]
+ and b=a
+  and if we modify a to be a[0]=0
+  then b=[0,2,3]
+  this is pass by reference
+
+= in java we have garbage collection , which means the objects that do not have a reference variable pointing towards the , garbage collection hits (removes the object from heap memory)
+ex:(in python for general idea of memory management)
+   a = 10
+   a = 20
+ here a now points to 20 instead of 10 , so 10 is removed from heap memory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
